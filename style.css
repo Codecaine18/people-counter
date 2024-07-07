@@ -12,15 +12,28 @@ h1
 div{
   
     display: flex;
-    align-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-button{
+#increment-btn{
     height: 30px;
-    margin: 1% 45% 1% 47%;
-    background-color: aqua;
+    background-color:rgb(255, 59, 59);
     color: black;
     font-weight: 600;
- border-radius: 10%;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
+#save-btn{
+    height: 30px;
+    color: black;
+    background-color:rgb(72, 231, 14);
+    border-radius: 10%;
+    font-weight: 600;
+}
+#count-el{
+    text-align: center;
+    color: black;
+    font-weight: bold;
 }

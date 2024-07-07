@@ -6,14 +6,26 @@ let count = 0 ;
 
         
 //     },1000);
-let countEl =  document.getElementById("countel");
+// let countEl =  document.getElementById("countel");
 
 
 function increment() {
     console.log("Button was clicked");
-    count = count + 1;
+    count += 1;
     document.getElementById("countel").innerText = count;
     // or countEl.innerText = count ;
-    console.log(count);
 
 }
+
+    function save()
+    {console.log(" Save Button was clicked");
+        console.log(count);
+        document.getElementById("count-el").innerText += count + "  - ";
+        document.getElementById("countel").innerText = 0;
+        count = 0 ;
+    } 
+
+
+    // let username = 'kk';
+    // let message = " You have three new notifications "
+    // console.log( message + " , " + username + " ! ");
